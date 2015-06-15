@@ -1,0 +1,42 @@
+.call-to-action-link a span.smaller {
+    font-size: 50%;
+}
+
+.flexslider li h1 { color: #EEE; font-weight: bold; }
+
+img#logokhan { height: 36px; }
+
+
+#whatitis-banner {
+    background-image:url(../images/sky.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-color:#F0FCFF;
+    padding:150px 0;
+    text-shadow:1px 1px 1px #000;
+    background-size:cover;
+}
+
+#whatitis-banner h1 {
+    text-align:center;
+    margin:0;
+    color:#fff;
+    font-size:65px;
+    line-height:1;
+    letter-spacing:-3px;
+}
+
+#whatitis-banner h2 {
+    text-align:center;
+    margin:0;
+    color:#fff;
+    font-weight:100;
+    font-size:27px;
+    letter-spacing:0;
+}
+
+#features-banner {
+    background-image:url(../images/rocket.jpg);
+}
+
+

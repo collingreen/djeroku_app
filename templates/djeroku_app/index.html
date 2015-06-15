@@ -1,0 +1,469 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Djeroku</title>
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <meta name="description" content="djeroku, django, heroku">
+        <meta name="author" content="Collin Green">
+
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+        <!--Le HTML5 shim, for IE6-8 support of HTML5 elements-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+       <!-- Le styles -->
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox.css' %}" media="all" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox-thumbs.css?v=1.0.2' %}" />
+        <link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/isotope.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/style-responsive.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/narrow.css' %}" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/djeroku.css' %}" media="all" />
+
+        <!-- Le fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'apple-touch-icon-144-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'apple-touch-icon-114-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'apple-touch-icon-72-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" href="{% static 'apple-touch-icon-57-precomposed.png' %}">
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    </head>
+
+    <body>
+        <!--################ NAVIGATION START ################-->
+        <div class="navbar-wrapper" >
+            <div class="navbar navbar-fixed-top" id="navigation">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="brand" href="#">  <img src="{% static 'images/logo.png' %}" id="logokhan"></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right">
+
+                                <li class="active">
+                                    <a href="#top">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#whatitis">What It Is</a>
+                                </li>
+                                <li class="">
+                                    <a href="#whatitisnt">What It Isn't</a>
+                                </li>
+                                <li class="">
+                                    <a href="#features">Features</a>
+                                </li>
+                                <li class="">
+                                    <a href="#call-to-action">Get It</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--################ NAVIGATION END ################-->
+
+        <!--################ WRAP START ################-->
+        <div id="wrap">
+
+            <!--################ HEADER START ################-->
+            <header id="top" data-stellar-background-ratio="0">
+                <div class="container home">
+                    <div class="flexslider home">
+                        <ul class="slides">
+                            <li class="">
+                                <h1>
+                                    <i class="icon-lightbulb icon-2x"></i>
+                                    <br />
+                                    Djeroku
+                                </h1>
+                                <h2>Django + Heroku, the easy way</h2>
+                            </li>
+
+                            <li class='margintop10p'>
+                                <div class='animated fadeInLeftBig span4'>
+                                    <i class="icon-gears icon-10x"></i>
+                                </div>
+                                <div class="animated fadeInDownBig span6">
+                                    <h2>
+                                        A Django project template to jumpstart your next Heroku deployment
+                                    </h2>
+                                </div>
+                            </li>
+                            <li class="margintop10p">
+                                <div class=" animated fadeInDownBig ">
+                                    <i class="icon-puzzle-piece icon-4x"></i>
+                                    <i class="icon-puzzle-piece icon-4x"></i>
+                                    <i class="icon-puzzle-piece icon-4x"></i>
+                                    <i class="icon-puzzle-piece icon-4x"></i>
+                                    <h2>
+                                      Djeroku glues together a full suite of
+                                      free Heroku addons, with all the tools,
+                                      settings, and configuration to get them
+                                      working together correctly
+                                    </h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="home-arrow" class="hidden-phone">
+                    <a href="#whatitis"  ><i class="icon-double-angle-down icon-3x" id="iconHome"></i></a>
+                </div>
+            </header>
+            <!--################ HEADER END ################-->
+
+            <!--################ MAIN CONTAINER START ################-->
+
+            <!--################ What It Is SECTION START ################-->
+            <section  id="whatitis" >
+                <div id="whatitis-banner" data-stellar-background-ratio="0" >
+                    <h1>Djeroku</h1>
+                    <p class="sub-heading-support">What It Is</p>
+                </div>
+
+                <div class="container">
+                    <div class="row margintop20">
+                        <div class="span12">
+                            <ul class="thumbnails">
+                                <li class="span4">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-bolt icon-10x color3"></i>
+                                        </div>
+                                        <h4>A Bag of Tricks</h4>
+
+                                        <p>Djeroku is the amalgamation of all the tips and tweaks I've gathered
+                                        while doing Django development on Heroku. If you have developed a few sites
+                                        and have them working on Heroku, 95% of this won't be a surprise since you
+                                        will have already solved all the same issues, most likely through
+                                        substantial quantities of your blood, sweat, and/or tears.</p>
+
+                                        <p>If you are just starting to play with Django or you haven't designed a site
+                                        from the ground up with scalability in mind, Djeroku (or any of several other
+                                        great options) is a great starting point so you are
+                                        set up correctly from the beginning. Django can do so many things that sometimes just
+                                        figuring out where to start can be a giant barrier to entry.</p>
+
+                                    </div>
+                                </li>
+                                <li class="span4">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-code-fork icon-10x color2"></i>
+                                        </div>
+                                        <h4>An Open Project Template</h4>
+
+                                        <p>Using Djeroku is as simple as creating a new Django project
+                                        and app(s) using the Djeroku layout as a template (follow the readme).
+                                        When done correctly, you get a working development deployment with all the settings
+                                        and configuration you need to immediately get started. Then, when you're
+                                        ready, Djeroku includes tools to create duplicate staging and production
+                                        apps on Heroku, fully loaded with free addons, and ready for deployment.</p>
+
+                                        <p>Djeroku itself is MIT licensed and all the tools it glues together are available
+                                        for commercial use, so you never need to change your development tools if you change
+                                        between commercial and non-commercial projects.</p>
+
+                                    </div>
+                                </li>
+
+                                <li class="span4">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-rocket icon-10x color4"></i>
+                                        </div>
+                                        <h4>Simple</h4>
+
+                                        <p>Be aware: Djeroku is meant to do one thing and there is nothing tricky about
+                                        how it works. You can easily tweak and change things as you desire, but
+                                        the goal is to get a Django webapp up and running as quickly as possible
+                                        with the end goal of deploying through Heroku. You can, of course, do whatever
+                                        you want, but the tools are all geared toward that end and make that exact
+                                        process extremely easy.</p>
+
+                                        <p>Most importantly, there are a TON of things that are simply my preference -
+                                        take everything with a big grain of salt and *never* assume I know more
+                                        than you.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--################ What It Is SECTION END ################-->
+
+
+
+            <!--################ What It Isn't SECTION START ################-->
+
+            <section  id="whatitisnt" >
+                <div id="support-banner" data-stellar-background-ratio="0" >
+                    <h1>Djeroku</h1>
+                    <p class="sub-heading-support">What It Isn't</p>
+                </div>
+
+                <div class="container">
+                    <div class="row margintop20">
+                        <div class="span12">
+                            <ul class="thumbnails">
+                                <li class="span4">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-magic icon-10x color3"></i>
+                                        </div>
+                                        <h4>Not Magic</h4>
+                                        <p>Djeroku isn't magic. In fact, it is just a Django project template with all
+                                        the settings already filled out and working, plus a couple tools to ease
+                                        the process of deploying on Heroku. </p>
+                                    </div>
+                                </li>
+                                <li class="span4">
+                                    <div class="thumbnail border-none">
+                                        <div class="feature-icon">
+                                            <i class="icon-building icon-10x color1"></i>
+                                        </div>
+                                        <h4>Not College</h4>
+                                        <p>Djeroku does not let you 'make a website without being a developer', nor
+                                        can it teach you to code. Djeroku is for developers -- it can show you
+                                        where to begin if you're new, but it is your responsibility to build everything
+                                        correctly.</p>
+                                    </div>
+                                </li>
+                                <li class="span4">
+                                    <div class="thumbnail border-right">
+                                        <div class="feature-icon">
+                                            <i class="icon-warning-sign icon-10x color4"></i>
+                                        </div>
+                                        <h4>Not A Nanny</h4>
+                                        <p>Djeroku doesn't protect you from yourself or anyone else. It can get your next
+                                        project started in a flash, but after that you're on your own.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--################ What It Isn't SECTION END ################-->
+
+            <!--################ Features SECTION START ################-->
+            <section  id="features" >
+                <div id="features-banner" data-stellar-background-ratio="0" >
+                    <h1>Features</h1>
+                </div>
+
+                <div class="container">
+                    <div class="row margintop20">
+                        <div class="span12">
+                            <ul class="thumbnails">
+                                <li class="span3">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-gear icon-10x color1"></i>
+                                        </div>
+                                        <h4>Heroku Setup Script</h4>
+                                        <p>A Fabric script that sets everything up correctly on Heroku,
+                                        including <a href='http://12factor.net/dev-prod-parity'>duplicate staging and production
+                                        environments</a> and a <a
+                                        href='https://blog.heroku.com/archives/2013/7/10/heroku-pipelines-beta'>deployment
+                                        pipeline</a> between them.</p>
+                                    </div>
+                                </li>
+
+                                <li class="span3">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-exchange icon-10x color1"></i>
+                                        </div>
+                                        <h4>Development Vs Production</h4>
+                                        <p>On Production, Djeroku uses (and configures) several
+                                        <a href='http://12factor.net/backing-services'>Heroku addons</a>
+                                        to provide the services needed for a
+                                        scalable production app. On Development,
+                                        Djeroku replaces them with simple local alternatives
+                                        with the same interfaces so your code works exactly the same
+                                        in both places.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="span3">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-sitemap icon-10x color1"></i>
+                                        </div>
+                                        <h4>Dependencies and Configuration</h4>
+                                        <p>Djeroku glues together a bunch of libraries and
+                                        Heroku addons with working configuration and
+                                        uses pip requirement files to
+                                        <a href='http://12factor.net/dependencies'>isolate
+                                        and control their installation</a>.</p>
+                                        <p>All sensitive and account related configuration data
+                                        is stored in <a href='http://12factor.net/config'>Environment Variables</a>,
+                                        both for easy modification and to keep your credentials out of
+                                        your codebase.</p>
+                                    </div>
+                                </li>
+
+                                <li class="span3">
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-puzzle-piece icon-10x color1"></i>
+                                        </div>
+                                        <h4>Under the Hood</h4>
+                                        <ul>
+                                            <li>Web Server: Gunicorn + GEvent</li>
+                                            <li>Database: Heroku Postgres</li>
+                                            <li>Caching: Memcache Addons</li>
+                                            <li>Queue and Workers: Celery</li>
+                                            <li>Outgoing Mail: Mandrill or Gmail</li>
+                                            <li>In-Memory Datastore: Redis</li>
+                                            <li>Monitoring: NewRelic and PaperTrail</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--################ Features SECTION END ################-->
+            <section id="call-to-action" class="margintop20 marginbot20">
+                <div class="call-to-action-link">
+                    <a href="http://github.com/collingreen/djeroku">
+                        <span>Get it on GitHub</span> <i class='icon-long-arrow-right color3'></i> <i class='icon-github color3'></i>
+                        <br/>
+                        <span class='smaller'>Djeroku is totally open source. Follow it, fork it,
+                        submit issues, fix bugs, or add features.</span>
+                    </a>
+                </div>
+            </section>
+
+        <!--################ PUSH WILL KEEP THE FOOTER AT BOTTOM IF YOU WANT TO CREATE OTHER PAGES ################-->
+        <div id="push"></div>
+
+        <!--################ FOOTER START ################-->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <img src="{% static 'images/logo.png' %}" >
+                        <p>Submit issues and pull request at <a href="https://github.com/collingreen/djeroku">https://github.com/collingreen/djeroku</a></p>
+                        <p>Email Questions, Comments, Fixes, Complaints, and Suggestions
+                        to collin@djeroku.com
+                        <p class="copyright">
+                            &copy; 2013-2015 Djeroku
+                        </p>
+                    </div>
+                    <div class="span3">
+                        <h3>Links </h3>
+                        <ul class="unstyled footer-links">
+                            <li><a href="http://djangoproject.com" class="flink">Django</a></li>
+                            <li><a href="http://heroku.com" class="flink">Heroku</a></li>
+                            <li><a href="http://python.org" class="flink">Python</a></li>
+                            <li><a href="http://github.com" class="flink">GitHub</a></li>
+                            <li><a href='http://12factor.net' class='flink'>Heroku's 12 Factor App</a></li>
+                        </ul>
+                    </div>
+                    <div class="span3">
+                        <h3>&nbsp;</h3>
+                        <ul class="unstyled footer-links">
+                            <li><a href="http://github.com/collingreen/djeroku" class="flink">Djeroku on GitHub</a></li>
+                            <li><a href='404' class='flink'>Example 404 (Meerkat)</li>
+                            <li><a href='500' class='flink'>Example 500 (Pig)</a></li>
+                            <li><a data-toggle="modal" href="#myModal" class="flink">Image Attribution</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--################ FOOTER END ################-->
+
+
+        <!--################ JAVASCRIPTS ################-->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- <script src="js/jquery.js"></script> -->
+        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js'></script>
+        <script src="{% static 'js/modernizr.js' %}"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="{% static 'js/jquery.fitvids.js' %}"></script>
+        <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+        <script src="{% static 'js/twitter.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.fancybox-thumbs.js?v=1.0.2' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.fancybox-media.js?v=1.0.0' %}"></script>
+        <script src="{% static 'js/stellar.js' %}"></script>
+        <script src="{% static 'js/nicescroll.min.js' %}"></script>
+        <script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+        <script src="{% static 'js/custom-home.js' %}"></script>
+        <script src="{% static 'js/portfolio.js' %}"></script>
+        <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+        <script src="{% static 'js/retina.js' %}"></script>
+
+        <!-- Attribution MODAL -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Photo Attribution</h3>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        pink lotus - <em>artzhangqingfeng</em>
+                        <br/>
+                        http://pixabay.com/en/lotus-pink-lotus-flower-plant-142029/
+                    </li>
+                    <li>
+                        lightning - <em>PublicDomainPictures</em>
+                        <br/>
+                        http://pixabay.com/en/cloud-danger-dark-dramatic-71366/
+                    </li>
+                    <li>
+                        monument valley - <em>juliaavisphillips</em>
+                        <br/>
+                        http://pixabay.com/en/ear-of-the-wind-arch-sandstone-89470/
+                    </li>
+                    <li>
+                        shuttle launch - <em>nasa-imagery</em>
+                        <br/>
+                        http://pixabay.com/en/rocket-lift-off-liftoff-970/
+                    </li>
+                    <li>
+                        road - <em>anonymous-44833</em>
+                        <br/>
+                        http://pixabay.com/en/road-road-marking-street-miles-166543/
+                    </li>
+                    <li>
+                      meerkat (404) - <em>PublicDomainPictures</em>
+                      <br/>
+                      http://pixabay.com/en/africa-african-alert-animal-165203/
+                    </li>
+                    <li>
+                      swimming pig (500) - <em>larsen9236</em>
+                      <br/>
+                      http://pixabay.com/en/staniel-cay-swimming-pig-seagull-171908/
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Attribution MODAL END-->
+    </body>
+</html>

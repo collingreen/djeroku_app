@@ -1,0 +1,18 @@
+{% extends 'djeroku_app/base.html' %}
+
+{% block title %}Tasks{% endblock title %}
+
+{% block extra_head %}
+<style>
+  body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+</style>
+{% endblock extra_head %}
+
+{% block content %}
+{% if created %}<h1>Created Task</h1>{% endif %}
+<h2>Tasks: {{task_count}} ({{pending}} pending)</h2>
+{% endblock content %}

@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang='en' class="no-js"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{% block title %}{% endblock title %}</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block favicon %}
+      <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    {% endblock %}
+    {% block appletouchicon %}
+      <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}"/>
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'apple-touch-icon-144x144-precomposed.png' %}"/>
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'apple-touch-icon-114x114-precomposed.png' %}"/>
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'apple-touch-icon-72x72-precomposed.png' %}"/>
+      <link rel="apple-touch-icon-precomposed" href="{% static 'apple-touch-icon-precomposed.png' %}"/>
+    {% endblock appletouchicon %}
+
+    {% block external_css %}
+      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+      <!--<link href="//netdna.bootstrapcdn.com/bootswatch/2.3.2/spacelab/bootstrap.min.css" rel="stylesheet"> -->
+      <!--<link href="//netdna.bootstrapcdn.com/bootswatch/2.3.2/cyborg/bootstrap.min.css" rel="stylesheet"> -->
+    {% endblock external_css %}
+
+    {% block css %}{% endblock css %}
+
+    {% block head_js %}{% endblock head_js %}
+
+    {% block extra_head %}{% endblock extra_head %}
+  </head>
+  <body>
+    {% block browser_warning %}
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% endblock browser_warning %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block after_content_js %}
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    {% endblock after_content_js %}
+
+    {% block google_analytics %}
+      {% if not debug %}
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+      {% else %}
+          <!-- google analytics disabled for debug -->
+      {% endif %}
+    {% endblock google_analytics %}
+  </body>
+</html>
